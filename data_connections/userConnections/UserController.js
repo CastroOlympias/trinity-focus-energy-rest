@@ -1,5 +1,5 @@
-const { UserModel } = require('../models');
-const { signToken } = require('../utils/Authentication')
+const { UserModel } = require('../../data_models/_index_models');
+const { signToken } = require('../../utils/Authentication')
 const bcrypt = require('bcrypt');
 const userController = {
   // get all pizzas
