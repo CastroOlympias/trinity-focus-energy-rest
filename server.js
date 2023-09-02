@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/trinity-rest', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/trinity', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         // This add family: 4, enabled node js 18.12 to connect to the database, was receiving a 500 internal error.

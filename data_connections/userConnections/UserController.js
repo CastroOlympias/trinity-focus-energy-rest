@@ -10,6 +10,7 @@ const userController = {
       // .skip(0)
       .select('-__v')
       .sort({ _id: -1 })
+      .populate('userHome')
       .then(userData => res.json(userData))
       .catch(err => {
         console.log(err);
@@ -46,14 +47,12 @@ const userController = {
 
 
 
-
-
-
   loginToUser: async ({ body }, res) => {
-    let tester = []
+
     const user = await UserModel.findOne({ eMail: body.eMail })
 
       .sort({ _id: -1 })
+      .populate('userHome')
       .then(userData => res.json(userData))
       .catch(err => {
         console.log(err);
@@ -64,6 +63,8 @@ const userController = {
     }
     let salt = 10
     const test = await bcrypt.compare(body.password, await bcrypt.hash(body.password, salt));
+
+
     console.log('Password match?', test)
     if (!test) {
       console.log('Invalid credentials')
@@ -74,6 +75,37 @@ const userController = {
     const token = signToken(user);
     return { token, user };
   }
+
+
+
+  // loginToUser: async ({ body }, res) => {
+
+  //   const user = await UserModel.findOne({ eMail: body.eMail })
+
+  //     .sort({ _id: -1 })
+  //     .populate('userHome')
+  //     .then(userData => res.json(userData))
+  //     .catch(err => {
+  //       console.log(err);
+  //       res.sendStatus(400);
+  //     });
+  //   if (!user) {
+  //     console.log('Invalid credentials')
+  //   }
+  //   let salt = 10
+  //   const test = await bcrypt.compare(body.password, await bcrypt.hash(body.password, salt));
+
+
+  //   console.log('Password match?', test)
+  //   if (!test) {
+  //     console.log('Invalid credentials')
+  //   } else {
+  //     console.log('correct password')
+  //   }
+
+  //   const token = signToken(user);
+  //   return { token, user };
+  // }
 
 
 
