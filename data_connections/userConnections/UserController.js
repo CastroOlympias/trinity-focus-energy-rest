@@ -18,29 +18,11 @@ const userController = {
       });
   },
 
-  // get one pizza by id
-  // getPizzaById({ params }, res) {
-  //   console.log('********************', params)
-  //   Pizza.findOne({ _id: params.id })
-  //     .populate({
-  //       path: 'comments',
-  //       select: '-__v'
-  //     })
-  //     .select('-__v')
-  //     .then(dbPizzaData => res.json(dbPizzaData))
-  //     .catch(err => {
-  //       console.log(err);
-  //       res.sendStatus(400);
-  //     });
-  // },
-
-  // createPizza
   createUser: async ({ body }, res) => {
     const newUser = UserModel.create(body)
       .then(userData => res.json(userData))
       .catch(err => res.json(err));
     const token = signToken(newUser)
-    // console.log(token)
     return { token, newUser }
   },
 
@@ -49,31 +31,42 @@ const userController = {
 
   loginToUser: async ({ body }, res) => {
 
+    const compareIncomingPasswordWithDatabasePassword = async (userData) => {
+      console.log(userData)
+
+      if (userData === null) {
+        return MESSAGE = { WRONG_CREDENTIALS: 'You have provided the wrong credentials' }
+      }
+
+      const checkLoginCredentials = await bcrypt.compare(body.password, userData.password);
+
+
+      console.log('Password match?', checkLoginCredentials)
+
+      if (!checkLoginCredentials) {
+        console.log('Invalid credentials')
+        return MESSAGE = { WRONG_CREDENTIALS: 'You have provided the wrong credentials' }
+      } else {
+        console.log('correct password')
+        const token = signToken(userData);
+        return { token, userData };
+      }
+
+    }
+
     const user = await UserModel.findOne({ eMail: body.eMail })
 
       .sort({ _id: -1 })
       .populate('userHome')
-      .then(userData => res.json(userData))
+      .then(userData => compareIncomingPasswordWithDatabasePassword(userData))
+      .then(userDataReturnToClient => res.json(userDataReturnToClient))
       .catch(err => {
         console.log(err);
         res.sendStatus(400);
       });
-    if (!user) {
-      console.log('Invalid credentials')
-    }
-    let salt = 10
-    const test = await bcrypt.compare(body.password, await bcrypt.hash(body.password, salt));
+    // console.log(user)
 
 
-    console.log('Password match?', test)
-    if (!test) {
-      console.log('Invalid credentials')
-    } else {
-      console.log('correct password')
-    }
-
-    const token = signToken(user);
-    return { token, user };
   }
 
 
