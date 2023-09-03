@@ -51,7 +51,39 @@ const userController = {
         console.log(err);
         res.sendStatus(400);
       });
-  }
+  },
+
+  changeAUsereMailOrPassword: async ({ body }, res) => {
+    const compareIncomingPasswordWithDatabasePasswordAndChangePassword = async (body, userData) => {
+      if (userData === null) {
+        return MESSAGE = { WRONG_CREDENTIALS: 'You have provided the wrong credentials' }
+      }
+      const checkLoginCredentials = await bcrypt.compare(body.password, userData.password);
+      if (!checkLoginCredentials) {
+        return MESSAGE = { WRONG_CREDENTIALS: 'You have provided the wrong credentials' }
+      } else {
+        const saltRounds = 10;
+        let newPassword = await bcrypt.hash(body.newPassword, saltRounds);
+        userData.password = newPassword
+        const token = signToken(userData);
+        const user = await UserModel.findOneAndUpdate(
+          { _id: userData._id },
+          userData,
+          { new: true });
+        return { token, user };
+      }
+    }
+
+    await UserModel.findOne({ eMail: body.eMail })
+      .sort({ _id: -1 })
+      .populate('userHome')
+      .then(userData => compareIncomingPasswordWithDatabasePasswordAndChangePassword(body, userData))
+      .then(userDataReturnToClient => res.json(userDataReturnToClient))
+      .catch(err => {
+        console.log(err);
+        res.sendStatus(400);
+      });
+  },
 };
 
 module.exports = userController;

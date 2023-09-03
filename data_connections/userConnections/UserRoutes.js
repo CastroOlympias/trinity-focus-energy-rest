@@ -3,15 +3,20 @@ const {
     getAllUsers,
     createUser,
     loginToUser,
-} = require('./UserController.js');
+    changeAUsereMailOrPassword,
+} = require('./UserControllers.js');
 
 router
     .route('/')
     .get(getAllUsers)
-    .post(createUser);
+    .post(createUser)
 
 router
     .route('/login')
     .get(loginToUser);
+
+router
+    .route('/change_user_credentials')
+    .put(changeAUsereMailOrPassword)
 
 module.exports = router;
