@@ -3,7 +3,8 @@ const { signToken } = require('../../utils/Authentication')
 const bcrypt = require('bcrypt');
 
 const userController = {
-  getAllUsers: async (req, res) => {
+  getAllUsers: async ({ body }, res) => {
+    console.log(body)
     UserModel.find({})
       // .limit(1)
       // .skip(0)

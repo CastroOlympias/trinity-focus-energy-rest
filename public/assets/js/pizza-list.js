@@ -1,8 +1,25 @@
 const $pizzaList = document.querySelector('#pizza-list');
+let skip = 0
+let limit = 1
+
+let formData = {
+  "eMail": "a@msn.com",
+  "userName": "BBB",
+  "password": "123456789",
+  "newPassword": "987654321",
+  "birthDate": "07/04/1776"
+}
 
 const getPizzaList = () => {
-  fetch('/api/users')
-    .then(response => response.json())
+  fetch('/api/users', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+    .then(response => response.json(skip, limit))
     .then(pizzaListArr => {
       pizzaListArr; printPizza(pizzaListArr[0]); console.log(pizzaListArr[0])
     })
@@ -32,4 +49,6 @@ const printPizza = ({ eMail, pizzaName, toppings, size, commentCount, createdBy,
   $pizzaList.innerHTML += pizzaCard;
 };
 
+
 getPizzaList();
+
