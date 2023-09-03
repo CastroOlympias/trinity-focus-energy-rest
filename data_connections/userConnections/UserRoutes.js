@@ -4,7 +4,7 @@ const {
     createUser,
     loginToUser,
     changeAUsereMailOrPassword,
-} = require('./UserControllers.js');
+} = require('./UserController');
 
 router
     .route('/')

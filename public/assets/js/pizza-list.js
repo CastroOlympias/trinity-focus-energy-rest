@@ -21,7 +21,7 @@ const getPizzaList = () => {
   })
     .then(response => response.json(skip, limit))
     .then(pizzaListArr => {
-      pizzaListArr; printPizza(pizzaListArr[0]); console.log(pizzaListArr[0])
+      pizzaListArr; printPizza(pizzaListArr[1]); console.log(pizzaListArr[1])
     })
     .catch(err => {
       console.log(err);
