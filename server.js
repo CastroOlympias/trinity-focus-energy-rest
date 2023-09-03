@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const http = require('http')
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const HOST_IP = '192.168.1.29'
 const httpServer = http.createServer(app);
 
