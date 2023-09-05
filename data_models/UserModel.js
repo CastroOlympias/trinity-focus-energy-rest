@@ -1,31 +1,34 @@
-const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
-const UTCDateFormatter = require('../configuration/UTCDateFormatter.js');
+// const { Schema, model } = require('mongoose');
+import { Schema, model } from 'mongoose';
+// const bcrypt = require('bcrypt');
+import bcrypt from 'bcrypt'
+// const UTCDateFormatter = require('../configuration/UTCDateFormatter.js');
+import UTCDateFormatter from '../configuration/UTCDateFormatter.js'
 
 const userSchema = new Schema(
 
     {
         // Document User Data
-        UTCCreatedAtTime: {
-            type: Date,
-            default: Date.now,
-            get: time => UTCDateFormatter(time)[0]
-        },
-        UTCCreatedAtDate: {
-            type: Date,
-            default: Date.now,
-            get: date => UTCDateFormatter(date)[1]
-        },
-        UTCCreatedAtMonth: {
-            type: Date,
-            default: Date.now,
-            get: UTCMonth => UTCDateFormatter(UTCMonth)[2]
-        },
-        UTCCreatedAtYear: {
-            type: Date,
-            default: Date.now,
-            get: UTCYear => UTCDateFormatter(UTCYear)[3]
-        },
+        // UTCCreatedAtTime: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: time => UTCDateFormatter(time)[0]
+        // },
+        // UTCCreatedAtDate: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: date => UTCDateFormatter(date)[1]
+        // },
+        // UTCCreatedAtMonth: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: UTCMonth => UTCDateFormatter(UTCMonth)[2]
+        // },
+        // UTCCreatedAtYear: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: UTCYear => UTCDateFormatter(UTCYear)[3]
+        // },
         eMail: {
             type: String,
             require: true,
@@ -42,11 +45,11 @@ const userSchema = new Schema(
             require: true,
             minlength: [8, 'Your password needs to be at least 8 characters long']
         },
-        birthDate: {
-            type: Date,
-            required: true,
-            get: UTCYear => UTCDateFormatter(UTCYear)[1]
-        },
+        // birthDate: {
+        //     type: Date,
+        //     required: true,
+        //     get: UTCYear => UTCDateFormatter(UTCYear)[1]
+        // },
         renderActionBar: {
             type: Boolean,
             default: true
@@ -121,5 +124,6 @@ userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
 
-const UserModel = model('UserModel', userSchema);
-module.exports = UserModel;
+const UserModel = model('UserModel', userSchema)
+
+export default UserModel

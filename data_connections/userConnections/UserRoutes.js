@@ -1,22 +1,20 @@
-const router = require('express').Router();
-const {
-    getAllUsers,
-    createUser,
-    loginToUser,
-    changeAUsereMailOrPassword,
-} = require('./UserController');
+import routerVar from 'express'
+const router = routerVar.Router()
+
+import userController from './UserController.js'
+
 
 router
     .route('/')
-    .post(getAllUsers)
-    .post(createUser)
+    .post(userController.getAllUsers)
+    .post(userController.createUser)
 
 router
     .route('/login')
-    .get(loginToUser);
+    .get(userController.loginToUser);
 
 router
     .route('/change_user_credentials')
-    .put(changeAUsereMailOrPassword)
+    .put(userController.changeAUsereMailOrPassword)
 
-module.exports = router;
+export default router

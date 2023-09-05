@@ -1,5 +1,5 @@
-const { Schema, model } = require('mongoose')
-
+// const { Schema, model } = require('mongoose')
+import { Schema, model } from 'mongoose';
 const homeSchema = new Schema(
     {
         homeUserId: {
@@ -25,4 +25,4 @@ const homeSchema = new Schema(
 )
 
 const HomeModel = model('HomeModel', homeSchema)
-module.exports = HomeModel
+export default HomeModel

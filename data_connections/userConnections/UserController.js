@@ -1,6 +1,12 @@
-const { UserModel } = require('../../data_models/_index_models');
-const { signToken } = require('../../utils/Authentication')
-const bcrypt = require('bcrypt');
+// const { UserModel } = require('../../data_models/_index_models');
+import UserModel from '../../data_models/UserModel.js'
+// const { signToken } = require('../../utils/Authentication')
+import signToken from '../../utils/Authentication.js'
+// const bcrypt = require('bcrypt');
+import bcrypt from 'bcrypt'
+
+
+
 
 const userController = {
   getAllUsers: async ({ body }, res) => {
@@ -11,7 +17,7 @@ const userController = {
       .select('-__v')
       .select('-password')
       .sort({ _id: -1 })
-      .populate('userHome')
+      // .populate('userHome')
       .then(userData => res.json(userData))
       .catch(err => {
         console.log(err);
@@ -87,4 +93,5 @@ const userController = {
   },
 };
 
-module.exports = userController;
+export default userController
+

@@ -1,10 +1,11 @@
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken'
 
 // need to setup secret as a hidden variable
 const secret = 'mysecretsshhhhh';
 const expiration = '999999h';
 
-module.exports = {
+export default {
   authMiddleware: function ({ req }) {
     // allows token to be sent via req.body, req.query, or headers
     let token = req.body.token || req.query.token || req.headers.authorization;
