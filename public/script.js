@@ -21,3 +21,7 @@ workerButton.addEventListener('click', event => {
     worker_function();
 })
 
+
+// export default function Test() {
+//     console.log('jsdfhsfdhshdf')
+// }

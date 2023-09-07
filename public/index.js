@@ -9,7 +9,11 @@
 // Element creations need to stay globally scoped as, when using an if statement for when to remove the element, the else { elment.remove() } doesn't have visbility to the globally defined element, and thus doesn't remove the element. eg. button click of appList creates mutiple isntances of the appListModal <script? element and doesn't remove any upon the closing of the modal
 
 // <script> elements which are to load js files that load elemement into the body, need to be decalred in the parent element of the child elements
-
+// import Test from './script'
+import Authentication from './Authentication.js'
+import test from './js/main.js'
+console.log(test.message)
+// const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
 const navModalFadeOutTimer = 500
 const modalOpenDelayTimer = 30

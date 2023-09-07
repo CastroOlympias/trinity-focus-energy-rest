@@ -13,10 +13,19 @@
     <button id="worker">Worker</button>
     <div id="pizza-list"></div>
 </body>
-<script src='./index.js'></script>
+<script type="module" src='./index.js'></script>
+<!-- <script type="text/javascript" src="./js/main.js">'use strict'</script> -->
 <script src="./script.js"></script>
 <script src='./test.js'></script>
 <script src='./worker.js'></script>
+<!-- <script type="text/javascript">
+    'use strict';
+    window.addEventListener('load', () => {
+        import('/module1.js')// DO NOT USE "./"
+            .then((m) => { alert(m.message.text); })// "Hello World!"
+            .catch((e) => { alert('ERROR: ' + e) })
+    });
+</script> -->
 
 
 </html>
