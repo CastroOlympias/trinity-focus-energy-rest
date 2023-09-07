@@ -1,5 +1,5 @@
 // const jwt = require('jsonwebtoken');
-// import jwt from './js/jsonwebtoken'
+// import jwt from 'jsonwebtoken'
 
 // need to setup secret as a hidden variable
 const secret = 'mysecretsshhhhh';

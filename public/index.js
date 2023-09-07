@@ -10,9 +10,11 @@
 
 // <script> elements which are to load js files that load elemement into the body, need to be decalred in the parent element of the child elements
 // import Test from './script'
-import Authentication from './Authentication.js'
+// import Authentication from './Authentication.js'
 import test from './js/main.js'
-console.log(test.message)
+const helpMe = "I'm helpign you!"
+console.log()
+test(helpMe)
 // const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
 const navModalFadeOutTimer = 500

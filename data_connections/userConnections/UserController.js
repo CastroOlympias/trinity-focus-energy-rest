@@ -1,12 +1,6 @@
-// const { UserModel } = require('../../data_models/_index_models');
 import UserModel from '../../data_models/UserModel.js'
-// const { signToken } = require('../../utils/Authentication')
 import signToken from '../../utils/Authentication.js'
-// const bcrypt = require('bcrypt');
 import bcrypt from 'bcrypt'
-
-
-
 
 const userController = {
   getAllUsers: async ({ body }, res) => {
@@ -29,7 +23,7 @@ const userController = {
     const newUser = UserModel.create(body)
       .then(userData => res.json(userData))
       .catch(err => res.json(err));
-    const token = signToken(newUser)
+    const token = signToken.signToken(newUser)
     return { token, newUser }
   },
 
@@ -44,14 +38,14 @@ const userController = {
         return MESSAGE = { WRONG_CREDENTIALS: 'You have provided the wrong credentials' }
       } else {
         userData.password = ''
-        const token = signToken(userData);
+        const token = signToken.signToken(userData);
         return { token, userData };
       }
 
     }
     await UserModel.findOne({ eMail: body.eMail })
       .sort({ _id: -1 })
-      .populate('userHome')
+      // .populate('userHome')
       .then(userData => compareIncomingPasswordWithDatabasePassword(userData))
       .then(userDataReturnToClient => res.json(userDataReturnToClient))
       .catch(err => {
@@ -72,7 +66,7 @@ const userController = {
         const saltRounds = 10;
         let newPassword = await bcrypt.hash(body.newPassword, saltRounds);
         userData.password = newPassword
-        const token = signToken(userData);
+        const token = signToken.signToken(userData);
         const user = await UserModel.findOneAndUpdate(
           { _id: userData._id },
           userData,
@@ -83,7 +77,7 @@ const userController = {
 
     await UserModel.findOne({ eMail: body.eMail })
       .sort({ _id: -1 })
-      .populate('userHome')
+      // .populate('userHome')
       .then(userData => compareIncomingPasswordWithDatabasePasswordAndChangePassword(body, userData))
       .then(userDataReturnToClient => res.json(userDataReturnToClient))
       .catch(err => {
@@ -93,5 +87,4 @@ const userController = {
   },
 };
 
-export default userController
-
+export default userController;

@@ -1,9 +1,8 @@
 // const jwt = require('jsonwebtoken');
 import jwt from 'jsonwebtoken'
 
-// need to setup secret as a hidden variable
 const secret = 'mysecretsshhhhh';
-const expiration = '999999h';
+const expiration = '2h';
 
 export default {
   authMiddleware: function ({ req }) {
@@ -12,10 +11,7 @@ export default {
 
     // ["Bearer", "<tokenvalue>"]
     if (req.headers.authorization) {
-      token = token
-        .split(' ')
-        .pop()
-        .trim();
+      token = token.split(' ').pop().trim();
     }
 
     if (!token) {
@@ -31,8 +27,9 @@ export default {
 
     return req;
   },
-  signToken: function ({ userName, eMail, _id }) {
-    const payload = { userName, eMail, _id };
+  signToken: function ({ firstName, email, _id }) {
+    const payload = { firstName, email, _id };
+
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-  }
+  },
 };
