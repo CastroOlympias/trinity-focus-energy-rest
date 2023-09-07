@@ -1,15 +1,15 @@
-export default function testFunctioning(help) {
+export default {
 
-    const testOne = () => {
+    testOne: function () {
         console.log('test one')
-    }
+    },
 
-    const testTwo = () => {
+    testTwo: function () {
         console.log('test two')
-    }
+    },
 
-    console.log(help)
-    const message = (help + " " + "alksdjfalksdjfalskdjf;alskdjf;alskdjf;alskjdf")
-    return testFunctioning
+    // console.log(help)
+    // const message = (help + " " + "alksdjfalksdjfalskdjf;alskdjf;alskdjf;alskjdf")
+    // return testFunctioning
 }
 

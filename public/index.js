@@ -14,7 +14,7 @@
 import test from './js/main.js'
 const helpMe = "I'm helpign you!"
 console.log()
-test(helpMe)
+test.testTwo()
 // const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
 const navModalFadeOutTimer = 500
