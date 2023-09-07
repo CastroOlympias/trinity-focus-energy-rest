@@ -13,8 +13,11 @@
 // import Authentication from './Authentication.js'
 import test from './js/main.js'
 const helpMe = "I'm helpign you!"
-console.log()
-test.testTwo()
+const testerOne = "Are you helping me?"
+const testerTwo = "Yes, I'm helping you!"
+// test(testerOne, testerTwo)
+test.testOne(testerOne)
+test.testTwo(testerTwo)
 // const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
 const navModalFadeOutTimer = 500
