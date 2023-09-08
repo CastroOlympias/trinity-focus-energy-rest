@@ -89,7 +89,7 @@ const printPizza = ({ eMail, pizzaName, toppings, size, commentCount, createdBy,
     </div>
   `;
 
-  $pizzaList.innerHTML += pizzaCard;
+
 };
 
 
