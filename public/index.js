@@ -11,6 +11,7 @@
 // <script> elements which are to load js files that load elemement into the body, need to be decalred in the parent element of the child elements
 // import Test from './script'
 // import Authentication from './Authentication.js'
+
 import test from './js/main.mjs'
 const helpMe = "I'm helpign you!"
 const testerOne = "Are you helping me?"
@@ -88,8 +89,7 @@ const printPizza = ({ eMail, pizzaName, toppings, size, commentCount, createdBy,
       </div>
     </div>
   `;
-
-
+  $pizzaList.innerHTML += pizzaCard;
 };
 
 

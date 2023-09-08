@@ -10,7 +10,7 @@
 
 .indexBodyClass {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 60px;
 }
