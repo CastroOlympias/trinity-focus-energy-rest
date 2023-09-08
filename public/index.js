@@ -11,12 +11,14 @@
 // <script> elements which are to load js files that load elemement into the body, need to be decalred in the parent element of the child elements
 // import Test from './script'
 // import Authentication from './Authentication.js'
-import test from './js/main.js'
+import test from './js/main.mjs'
 const helpMe = "I'm helpign you!"
 const testerOne = "Are you helping me?"
 const testerTwo = "Yes, I'm helping you!"
 // test(testerOne, testerTwo)
-test.testOne(testerOne)
+// test.testOne(testerOne)
+const thisTest = test.testOne(testerOne)
+console.log(thisTest)
 test.testTwo(testerTwo)
 // const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
@@ -27,8 +29,8 @@ const indexHtmlId = document.getElementById('indexHtmlId')
 const indexHeadId = document.getElementById('indexHeadId');
 const indexBodyId = document.getElementById('indexBodyId')
 const indexBodyClass = document.getElementsByClassName('indexBodyClass test');
-
-
+const newElement = document.createElement('section')
+indexBodyId.append(newElement)
 const navBarCss = document.createElement('link')
 navBarCss.rel = 'stylesheet';
 navBarCss.href = './globalComponents/navBar/navBar.css';
@@ -36,8 +38,8 @@ indexHeadId.append(navBarCss)
 
 const indexNavBar = document.createElement('script');
 indexNavBar.setAttribute('src', './globalComponents/navBar/navBar.js')
-indexHeadId.append(indexNavBar)
-
+indexBodyId.append(indexNavBar)
+indexBodyId.innerHTML = `${thisTest}`
 
 const $pizzaList = document.querySelector('#pizza-list');
 let skip = 0
