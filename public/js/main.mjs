@@ -1,3 +1,5 @@
+import anothertest from './mainTwo.mjs'
+
 export default {
 
 
@@ -9,7 +11,7 @@ export default {
 
 
     const FTS = 'Fuck this Shit!'
-    return `
+    return (`
     <section>
       <div>
         <h1>${FTS}</h1>
@@ -21,19 +23,19 @@ export default {
         </ul>
       </div>
     </section>
-    `
+    `)
+      +
+      (`
+        <ul>
+        <h1>Test me mudda chucka</h1>
+        <h2>${anothertest.testThree('does this string pass through?')}</h2>
+        </ul>
+      `)
   },
 
   testTwo: function (testerTwo) {
     console.log('test two')
     console.log(testerTwo)
   },
-
-
-
-
-  // console.log(help)
-  // const message = (help + " " + "alksdjfalksdjfalskdjf;alskdjf;alskdjf;alskjdf")
-  // return testFunctioning
 }
 
