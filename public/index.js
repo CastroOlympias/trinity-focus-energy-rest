@@ -12,15 +12,10 @@
 // import Test from './script'
 // import Authentication from './Authentication.js'
 
-import test from './js/main.mjs'
-const helpMe = "I'm helpign you!"
-const testerOne = "Are you helping me?"
-const testerTwo = "Yes, I'm helping you!"
-// test(testerOne, testerTwo)
-// test.testOne(testerOne)
-const thisTest = test.testOne(testerOne)
-console.log(thisTest)
-test.testTwo(testerTwo)
+const myFunction = () => {
+  console.log('hdhdhdhsdfsdfdhd')
+}
+
 // const mainJs = import('./js/main')
 const DOMRefreshTimer = 500
 const navModalFadeOutTimer = 500
@@ -31,16 +26,15 @@ const indexHeadId = document.getElementById('indexHeadId');
 const indexBodyId = document.getElementById('indexBodyId')
 const indexBodyClass = document.getElementsByClassName('indexBodyClass test');
 const newElement = document.createElement('section')
-indexBodyId.append(newElement)
+
 const navBarCss = document.createElement('link')
 navBarCss.rel = 'stylesheet';
 navBarCss.href = './globalComponents/navBar/navBar.css';
-indexHeadId.append(navBarCss)
+
 
 const indexNavBar = document.createElement('script');
 indexNavBar.setAttribute('src', './globalComponents/navBar/navBar.js')
-indexBodyId.append(indexNavBar)
-indexBodyId.innerHTML = `${thisTest}`
+
 
 const $pizzaList = document.querySelector('#pizza-list');
 let skip = 0
@@ -89,7 +83,7 @@ const printPizza = ({ eMail, pizzaName, toppings, size, commentCount, createdBy,
       </div>
     </div>
   `;
-  $pizzaList.innerHTML += pizzaCard;
+  // $pizzaList.innerHTML += pizzaCard;
 };
 
 

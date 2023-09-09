@@ -1,0 +1,602 @@
+  .home-element-dot-one-black-theme {
+    background: black;
+  }
+
+  .home-element-dot-two-black-theme {
+    background: black;
+  }
+
+  .home-element-dot-three-black-theme {
+    background: black;
+  }
+
+  .home-element-dot-four-black-theme {
+    background: black;
+  }
+
+  .application-element-dot-one-black-theme {
+    background: black;
+  }
+
+  .application-element-dot-two-black-theme {
+    background: black;
+  }
+
+  .application-element-dot-three-black-theme {
+    background: black;
+  }
+
+  .menu-element-dot-one-black-theme {
+    background: black;
+  }
+
+  .menu-element-dot-two-black-theme {
+    background: black;
+  }
+
+
+
+
+
+
+
+  .home-element-dot-one-cyanMagenta-theme {
+    background: linear-gradient(-250deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .home-element-dot-two-cyanMagenta-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .home-element-dot-three-cyanMagenta-theme {
+    background: linear-gradient(250deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .home-element-dot-four-cyanMagenta-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .application-element-dot-one-cyanMagenta-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .application-element-dot-two-cyanMagenta-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .application-element-dot-three-cyanMagenta-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+
+  .menu-element-dot-one-cyanMagenta-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+  .menu-element-dot-two-cyanMagenta-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(255, 0, 255, 1));
+  }
+
+
+
+
+
+
+
+
+  .home-element-dot-one-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .home-element-dot-two-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .home-element-dot-three-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .home-element-dot-four-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .application-element-dot-one-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .application-element-dot-two-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .application-element-dot-three-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+
+  .menu-element-dot-one-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+  .menu-element-dot-two-cyan-theme {
+    background-color: rgb(0, 255, 255, 1);
+  }
+
+
+
+
+
+
+
+  .home-element-dot-one-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .home-element-dot-two-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .home-element-dot-three-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .home-element-dot-four-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .application-element-dot-one-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .application-element-dot-two-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .application-element-dot-three-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+
+  .menu-element-dot-one-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+  .menu-element-dot-two-magenta-theme {
+    background-color: rgb(255, 0, 255, 1);
+  }
+
+
+
+
+
+
+
+
+  .home-element-dot-one-cyanMagentaOrange-theme {
+    background: linear-gradient(-250deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .home-element-dot-two-cyanMagentaOrange-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .home-element-dot-three-cyanMagentaOrange-theme {
+    background: linear-gradient(250deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .home-element-dot-four-cyanMagentaOrange-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .application-element-dot-one-cyanMagentaOrange-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .application-element-dot-two-cyanMagentaOrange-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .application-element-dot-three-cyanMagentaOrange-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .menu-element-dot-one-cyanMagentaOrange-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+  .menu-element-dot-two-cyanMagentaOrange-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+  }
+
+
+
+
+
+
+
+
+  .home-element-dot-one-cyanMagentaReverse-theme {
+    background: linear-gradient(-250deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .home-element-dot-two-cyanMagentaReverse-theme {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .home-element-dot-three-cyanMagentaReverse-theme {
+    background: linear-gradient(250deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .home-element-dot-four-cyanMagentaReverse-theme {
+    background: linear-gradient(-70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .application-element-dot-one-cyanMagentaReverse-theme {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .application-element-dot-two-cyanMagentaReverse-theme {
+    background: linear-gradient(-70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .application-element-dot-three-cyanMagentaReverse-theme {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .menu-element-dot-one-cyanMagentaReverse-theme {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+  .menu-element-dot-two-cyanMagentaReverse-theme {
+    background: linear-gradient(-70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+  }
+
+
+
+
+
+
+
+
+
+  .home-element-dot-one-redCharchoal-theme {
+    background: linear-gradient(-250deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .home-element-dot-two-redCharchoal-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .home-element-dot-three-redCharchoal-theme {
+    background: linear-gradient(250deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .home-element-dot-four-redCharchoal-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .application-element-dot-one-redCharchoal-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .application-element-dot-two-redCharchoal-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .application-element-dot-three-redCharchoal-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .menu-element-dot-one-redCharchoal-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+  .menu-element-dot-two-redCharchoal-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+  }
+
+
+
+
+
+
+
+  .home-element-dot-one-tan-theme {
+    background: linear-gradient(-250deg, rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .home-element-dot-two-tan-theme {
+    background: linear-gradient(70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .home-element-dot-three-tan-theme {
+    background: linear-gradient(250deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .home-element-dot-four-tan-theme {
+    background: linear-gradient(-70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .application-element-dot-one-tan-theme {
+    background: linear-gradient(70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .application-element-dot-two-tan-theme {
+    background: linear-gradient(-70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .application-element-dot-three-tan-theme {
+    background: linear-gradient(70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .menu-element-dot-one-tan-theme {
+    background: linear-gradient(70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+  .menu-element-dot-two-tan-theme {
+    background: linear-gradient(-70deg,rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+  }
+
+
+
+
+
+
+
+
+  .home-element-dot-one-redGreen-theme {
+    background: linear-gradient(-250deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .home-element-dot-two-redGreen-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .home-element-dot-three-redGreen-theme {
+    background: linear-gradient(250deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .home-element-dot-four-redGreen-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .application-element-dot-one-redGreen-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .application-element-dot-two-redGreen-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .application-element-dot-three-redGreen-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .menu-element-dot-one-redGreen-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+  .menu-element-dot-two-redGreen-theme {
+    background: linear-gradient(-70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+  }
+
+
+
+
+
+
+
+
+  .home-element-dot-one-redOrange-theme {
+    background: linear-gradient(-250deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .home-element-dot-two-redOrange-theme {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .home-element-dot-three-redOrange-theme {
+    background: linear-gradient(250deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .home-element-dot-four-redOrange-theme {
+    background: linear-gradient(-70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .application-element-dot-one-redOrange-theme {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .application-element-dot-two-redOrange-theme {
+    background: linear-gradient(-70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .application-element-dot-three-redOrange-theme {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .menu-element-dot-one-redOrange-theme {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+  .menu-element-dot-two-redOrange-theme {
+    background: linear-gradient(-70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+  }
+
+
+
+
+
+
+
+
+
+  .home-element-dot-one-cyanBrightCyanDark-theme {
+    background: linear-gradient(-250deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .home-element-dot-two-cyanBrightCyanDark-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .home-element-dot-three-cyanBrightCyanDark-theme {
+    background: linear-gradient(250deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .home-element-dot-four-cyanBrightCyanDark-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .application-element-dot-one-cyanBrightCyanDark-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .application-element-dot-two-cyanBrightCyanDark-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .application-element-dot-three-cyanBrightCyanDark-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .menu-element-dot-one-cyanBrightCyanDark-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+  .menu-element-dot-two-cyanBrightCyanDark-theme {
+    background: linear-gradient(-70deg, rgb(0, 255, 255, 1), rgb(0, 200, 200, 1), rgb(42, 52, 57, 1));
+  }
+
+
+
+
+
+
+
+
+
+  .home-element-dot-one-silver-theme {
+    background: linear-gradient(-250deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .home-element-dot-two-silver-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .home-element-dot-three-silver-theme {
+    background: linear-gradient(250deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .home-element-dot-four-silver-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .application-element-dot-one-silver-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .application-element-dot-two-silver-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .application-element-dot-three-silver-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-one-silver-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-two-silver-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 255, 1), rgb(150, 150, 150, 1), rgba(0, 0, 0, 1));
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .home-element-dot-one-gold-theme {
+    background: linear-gradient(-250deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-two-gold-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-three-gold-theme {
+    background: linear-gradient(250deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-four-gold-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-one-gold-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-two-gold-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-three-gold-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-one-gold-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-two-gold-theme {
+    background: linear-gradient(-70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+
+
+
+
+
+
+
+
+
+  .home-element-dot-one-brightRedDarkRed-theme {
+    background: linear-gradient(-250deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-two-brightRedDarkRed-theme {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-three-brightRedDarkRed-theme {
+    background: linear-gradient(250deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .home-element-dot-four-brightRedDarkRed-theme {
+    background: linear-gradient(-70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-one-brightRedDarkRed-theme {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-two-brightRedDarkRed-theme {
+    background: linear-gradient(-70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .application-element-dot-three-brightRedDarkRed-theme {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-one-brightRedDarkRed-theme {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }
+
+  .menu-element-dot-two-brightRedDarkRed-theme {
+    background: linear-gradient(-70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+  }

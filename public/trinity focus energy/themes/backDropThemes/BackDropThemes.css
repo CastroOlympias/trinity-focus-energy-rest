@@ -1,0 +1,88 @@
+.BackDrop-black-theme {
+    background: black;
+}
+
+.BackDrop-white-theme {
+    background: rgb(255, 255, 255);
+}
+
+.BackDrop-offWhite-theme {
+    background: rgb(200, 200, 200);
+}
+
+.BackDrop-mediumGrey-theme {
+    background: rgb(100, 100, 100);
+}
+
+.BackDrop-darkGrey-theme {
+    background: rgb(75, 75, 75);
+}
+
+
+.BackDrop-greenWhiteGreen-theme {
+    background: linear-gradient(70deg, rgb(0, 150, 0, 1), rgba(255, 255, 255, 1), rgb(0, 150, 0, 1));
+}
+
+.BackDrop-yellowWhiteYellow-theme {
+    background: linear-gradient(70deg, rgb(200, 200, 0, 1), rgba(255, 255, 255, 1), rgb(200, 200, 0, 1));
+}
+
+.BackDrop-redBlackRed-theme {
+    background: linear-gradient(70deg, rgb(150, 0, 0, 1), rgba(0, 0, 0, 1), rgb(150, 0, 0, 1));
+}
+
+.BackDrop-redWhiteRed-theme {
+    background: linear-gradient(70deg, rgb(150, 0, 0, 1), rgba(255, 255, 255, 1), rgb(150, 0, 0, 1));
+}
+
+.BackDrop-blueWhiteBlue-theme {
+    background: linear-gradient(70deg, rgb(0, 0, 150, 1), rgba(255, 255, 255, 1), rgb(0, 0, 150, 1));
+}
+
+.BackDrop-redWhiteBlue-theme {
+    background: linear-gradient(70deg, rgb(255, 0, 0, 1), rgba(255, 255, 255, 1), rgb(0, 0, 250, 1));
+}
+
+.BackDrop-cyanMagenta-theme {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+}
+
+.BackDrop-cyanMagentaOrange-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+}
+
+.BackDrop-cyanMagentaReverse-theme {
+    background: linear-gradient(-70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+}
+
+.BackDrop-redCharchoal-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+}
+
+.BackDrop-redGreen-theme {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+}
+
+.BackDrop-redOrange-theme {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+}
+
+.BackDrop-cyanBrightCyanDark-theme {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(0, 150, 150, 1), rgb(0, 100, 100, 1));
+}
+
+.BackDrop-silver-theme {
+    background: linear-gradient(70deg, rgb(200, 200, 200, 1), rgba(250, 250, 250, 1), rgba(200, 200, 200, 1), rgba(150, 150, 150, 1), rgba(100, 100, 100, 1));
+}
+
+.BackDrop-darkSilver-theme {
+    background: linear-gradient(70deg, rgb(200, 200, 200, 1), rgba(250, 250, 250, 1), rgba(200, 200, 200, 1), rgba(150, 150, 150, 1), rgba(100, 100, 100, 1), rgba(50, 50, 50, 1));
+}
+
+.BackDrop-gold-theme {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+}
+
+.BackDrop-brightRedDarkRed-theme {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+}

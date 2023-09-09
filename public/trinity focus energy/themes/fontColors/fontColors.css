@@ -1,0 +1,133 @@
+.font-color-black {
+    color: black;
+}
+
+.font-color-offBlack {
+    color: rgb(100, 100, 100);
+}
+
+.font-color-white {
+    color: rgb(255, 255, 255);
+}
+
+.font-color-offWhite {
+    color: rgb(200, 200, 200);
+}
+
+.font-color-red {
+    color: rgb(255, 0, 0);
+}
+
+.font-color-turquoise {
+    color: rgb(64, 224, 208);
+}
+
+.font-color-cyan {
+    color: rgb(0, 255, 255);
+}
+
+.font-color-magenta {
+    color: rgb(255, 0, 255);
+}
+
+.font-color-blueWhiteBlue {
+    background: linear-gradient(70deg, rgb(0, 0, 150, 1), rgba(255, 255, 255, 1), rgb(0, 0, 150, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-brightRedDarkRed {
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgb(175, 0, 0, 1), rgb(0, 0, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-cyanBrightCyanDark {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 0, 200, 1), rgb(0, 150, 150, 1), rgb(0, 100, 100, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-cyanMagenta {
+    background: linear-gradient(70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-cyanMagentaOrange {
+    background: linear-gradient(70deg, rgb(0, 255, 255, 1), rgba(0, 200, 200, 1), rgb(255, 0, 255, 1), rgb(200, 0, 200, 1), rgb(255, 175, 0, 1), rgba(200, 120, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-cyanMagentaReverse {
+    background: linear-gradient(-70deg, rgb(0, 250, 250, 1), rgba(0, 200, 200, 1), rgb(250, 0, 250, 1), rgb(200, 0, 200, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-gold {
+    background: linear-gradient(70deg, rgb(255, 255, 0, 1), rgba(125, 125, 0, 1), rgba(75, 75, 0, 1), rgb(0, 0, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-greenWhiteGreen {
+    background: linear-gradient(70deg, rgb(0, 150, 0, 1), rgba(255, 255, 255, 1), rgb(0, 150, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redBlackRed {
+    background: linear-gradient(70deg, rgb(150, 0, 0, 1), rgba(0, 0, 0, 1), rgb(150, 0, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redCharchoal {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(40, 0, 0, 1), rgb(50, 50, 50, 1), rgba(20, 20, 20, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-tan {
+    background: linear-gradient(70deg, rgba(210, 180, 140, 1), rgba(130, 90, 50, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redGreen {
+    background: linear-gradient(70deg, rgba(150, 0, 0, 1), rgba(75, 0, 0, 1), rgb(0, 150, 0, 1), rgba(0, 75, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redOrange {
+    background: linear-gradient(70deg, rgba(250, 0, 0, 1), rgba(150, 0, 0, 1), rgb(250, 175, 0, 1), rgba(200, 100, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redWhiteBlue {
+    background: linear-gradient(70deg, rgb(255, 0, 0, 1), rgba(255, 255, 255, 1), rgb(0, 0, 255, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-redWhiteRed {
+    background: linear-gradient(70deg, rgb(150, 0, 0, 1), rgba(255, 255, 255, 1), rgb(150, 0, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-silver {
+    background: linear-gradient(70deg, rgb(200, 200, 200, 1), rgba(250, 250, 250, 1), rgba(200, 200, 200, 1), rgba(150, 150, 150, 1), rgba(100, 100, 100, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-color-yellowWhiteYellow {
+    background: linear-gradient(70deg, rgb(200, 200, 0, 1), rgba(255, 255, 255, 1), rgb(200, 200, 0, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
