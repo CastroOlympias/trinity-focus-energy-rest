@@ -14,14 +14,13 @@
 
 </head>
 
-<body id="body" class='body'>
-
-</body>
-<script type="module">
-    import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
-    const body = document.getElementById('body')
-    body.innerHTML = TrinityFocusEnergy()
-</script>
-<script src="./index.js"></script>
+<body id="body" class='body'></body>
+<section hidden id="script-section">
+    <script type="module">
+        import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
+        const body = document.getElementById('body')
+        body.innerHTML = TrinityFocusEnergy()
+    </script>
+</section>
 
 </html>
