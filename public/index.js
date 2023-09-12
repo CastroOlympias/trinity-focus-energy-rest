@@ -11,9 +11,9 @@
 // <script> elements which are to load js files that load elemement into the body, need to be decalred in the parent element of the child elements
 // import Test from './script'
 // import Authentication from './Authentication.js'
-
-const myFunction = () => {
-  console.log('hdhdhdhsdfsdfdhd')
+let testOfGlobalVariable = { one: 'one', two: 'two', three: '3' }
+const myFunction = (message) => {
+  console.log('hdhdhdhsdfsdfdhd', message)
 }
 
 // const mainJs = import('./js/main')

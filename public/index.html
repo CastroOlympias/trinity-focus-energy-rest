@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="./trinity focus energy/platform components/actionBar/ActionBar.css" />
     <link rel="stylesheet" href="./trinity focus energy/themes/actionBarThemes/ActionBarThemes.css" />
     <link rel='stylesheet' href="./trinity focus energy/themes/backDropThemes/BackDropThemes.css" />
-
 </head>
 
 <body id="body" class='body'></body>
-<section hidden id="script-section">
-    <script type="module">
-        import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
-        const body = document.getElementById('body')
-        body.innerHTML = TrinityFocusEnergy()
-    </script>
-</section>
+<!-- Global Variables and functions, called from UI modules once registered @ the component -->
+<script>
+    let registeredFunctions;
+</script>
+<script type="module">
+    import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
+    const body = document.getElementById('body')
+    body.innerHTML = TrinityFocusEnergy()
+</script>
 
 </html>
