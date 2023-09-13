@@ -7,7 +7,7 @@ import http from 'http'
 import MainConnections from './data_connections/_MainConnections.js'
 const app = express();
 const PORT = process.env.PORT || 3000;
-const HOST_IP = '192.168.1.29'
+const HOST_IP = '192.168.5.96'
 const httpServer = http.createServer(app);
 
 app.use(express.json());

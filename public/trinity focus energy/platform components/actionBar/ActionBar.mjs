@@ -267,7 +267,7 @@ console.log(registeredFunctions)
         </aside>
       </aside>
 
-      <aside id="application-element" class='application-element-initial' onclick='registeredFunctions.openOrcloseApplicationModal()'>
+      <aside id="application-element" class='application-element-initial' onclick='registeredFunctions.testFunction()'>
         <aside class='application-element-dots-section'>
           <div id='application-element-dot-one' class='application-element-dot-one application-element-dot-one-${APPLICATION_BUTTON_DOT_THEME}-theme' />
         </aside>
@@ -291,6 +291,5 @@ console.log(registeredFunctions)
       <p hidden id='NavigationBar-MenuModal-Button'>Open Menu</p>
     </section>
   `)
-
 }
 

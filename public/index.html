@@ -17,11 +17,15 @@
 <!-- Global Variables and functions, called from UI modules once registered @ the component -->
 <script>
     let registeredFunctions;
+    let isTrue = false;
+    let DOM = { body }
+    console.log(DOM)
 </script>
 <script type="module">
     import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
     const body = document.getElementById('body')
     body.innerHTML = TrinityFocusEnergy()
+   
 </script>
 
 </html>
