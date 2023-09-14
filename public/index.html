@@ -18,14 +18,19 @@
 <script>
     let registeredFunctions;
     let isTrue = false;
+    let isFalse = true;
     let DOM = { body }
-    console.log(DOM)
+    console.log(body)
 </script>
 <script type="module">
     import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
     const body = document.getElementById('body')
+    const retriggerRender = () => {
+        body.innerHTML = TrinityFocusEnergy()
+    }
+    registeredFunctions = { ...registeredFunctions, retriggerRender: retriggerRender }
     body.innerHTML = TrinityFocusEnergy()
-   
+    console.log(TrinityFocusEnergy())
 </script>
 
 </html>

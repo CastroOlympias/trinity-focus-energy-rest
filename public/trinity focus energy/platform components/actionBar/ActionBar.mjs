@@ -200,6 +200,7 @@ const closeAllModals = () => {
 }
 
 const navigateHome = (test) => {
+
   console.log('Navigate home function at Actionbar Module', test)
   // console.log(currentUrlRoute)
   const topDashBoardSection = document.getElementById(`TopDashboard-Section`)
