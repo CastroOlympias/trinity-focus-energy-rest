@@ -2,83 +2,157 @@ import Home from './platform components/home/Home.mjs'
 import ActionBar from "./platform components/actionBar/ActionBar.mjs"
 
 
-const testFunction = () => {
-  console.log("Hello John", isTrue)
-  const first = document.getElementById('isTrue')
-  first.textContent = "true"
-  const second = document.getElementById('isFalse')
 
-  const third = document.getElementById('trinigy-focus-energy-body-section')
-  third.className = 'body-section BackDrop-mediumGrey-theme plusAnother'
-  if (isTrue === false) {
-    isTrue = true
-  } else {
-    isTrue = false
-  }
 
-  if (isFalse === true) {
-    isFalse = false
-  } else {
-    isFalse = true
-  }
-
-  console.log("Hello John", isTrue)
-
-  // const elemnetIsTrue = document.getElementById('isTrue')
-  // elemnetIsTrue.textContent = isTrue
-  const body = document.getElementById('body')
-  registeredFunctions.retriggerRender(body)
-}
-
-// console.log(DOM[0].children[1].children)
 
 export default function TrinityFocusEnergy(hello_world) {
   const fromHtml = './trinity focus energy/'
   hello_world = "Hello World from TinityFocusEnergy"
 
+  const testFunction = () => {
 
-  // setTimeout(() => {
-  //   if (isTrue === false) {
-  //     isTrue = true
-  //   }
-  //   console.log('jdjdjdjdjdjdjdjdjdjd')
-  // }, 2000)
+    if (isTrue === false) {
+      isTrue = true
+    } else {
+      isTrue = false
+    }
 
-  registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
-  console.log(isTrue)
+    if (isFalse === true) {
+      isFalse = false
+    } else {
+      isFalse = true
+    }
+
+    registeredFunctions.retriggerRender()
+
+  }
+
+  let skip = 0
+  let limit = 1
+
+  let formData = {
+    "eMail": "a@msn.com",
+    "userName": "BBB",
+    "password": "123456789",
+    "newPassword": "987654321",
+    "birthDate": "07/04/1776"
+  }
+
+
+
+if (argumentToFunction === undefined) {
+  argumentToFunction = "hey"
+}
+
+
+const testIng = () => {
+
   return (`
-      <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
-      <h1 id='isTrue'>${isTrue}</h1>
-      <h1 id='isFalse'>${isFalse}</h1>
-        <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
-        
-          ${isTrue === true ? (
-      `<h1>Hello!!!!</h1>`
+  <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
+    <h1 id='isTrue'>${isTrue}</h1>
+    <h1 id='isFalse'>${isFalse}</h1>
+    <h1 id='mayBe'>${registeredFunctions.stuff?._id}</h1>
+    <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
+
+      ${isTrue === true ? (
+      `<h1>Yes!!!!</h1>
+      <h1 id='mayBe'>${argumentToFunction}</h1>`
     ) : (
       `<h1>No!!!!</h1>`
     )}
 
-          ${Home()}
-        </section >
-        ${ActionBar()}
-      </section >
-    `)
+      ${isTrue === true ? (
+      `<h1>Hell Yeah!!!!</h1>`
+    ) : (
+      ``
+    )}
+     
+      ${Home()}
+    </section >
+    ${ActionBar()}
+  </section >
+`)
 }
 
+const getPizzaList = () => {
+  fetch('/api/users', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+    .then(response => response.json(skip, limit))
+    .then(pizzaListArr => {
+      pizzaListArr; registeredFunctions = {...registeredFunctions, stuff: pizzaListArr[0]}; console.log(pizzaListArr[0])
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+
+registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
+getPizzaList()
+
+// setTimeout(() => {
+//   return testIng()
+
+// }, 2000);
+
+return testIng()
 
 
 
-//   return (`
-//   <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
-//     <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
-//     ${isTrue === true ? (
-//     `<h1>Hello!!!!</h1>`
-//   ) : (
-//     `<h1>No!!!!</h1>`
-//   )}
 
-//       ${Home()}
-//     </section >
-// ${ActionBar()}
-//   </section >
-// `)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //   return (`
+  //   <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
+  //     <h1 id='isTrue'>${isTrue}</h1>
+  //     <h1 id='isFalse'>${isFalse}</h1>
+  //     <h1 id='mayBe'>${registeredFunctions.stuff?._id}</h1>
+  //     <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
+
+  //       ${isTrue === true ? (
+  //       `<h1>Yes!!!!</h1>`
+  //     ) : (
+  //       `<h1>No!!!!</h1>`
+  //     )}
+
+  //       ${isTrue === true ? (
+  //       `<h1>Hell Yeah!!!!</h1>`
+  //     ) : (
+  //       ``
+  //     )}
+       
+  //       ${Home()}
+  //     </section >
+  //     ${ActionBar()}
+  //   </section >
+  // `)
+  
+
+
+
+
+
+  
+}

@@ -19,18 +19,28 @@
     let registeredFunctions;
     let isTrue = false;
     let isFalse = true;
-    let DOM = { body }
-    console.log(body)
+    let DOM_VERSIONS
+    let argumentToFunction = "sup dude!"
 </script>
+
 <script type="module">
     import TrinityFocusEnergy from './trinity focus energy/TrinityFocusEnergy.mjs'
+    import DOMUpdater from './DOMUpdater.mjs'
     const body = document.getElementById('body')
     const retriggerRender = () => {
+        const CURRENT_DOM = JSON.stringify(document.getElementById('body').innerHTML)
+        const CHANGED_DOM = JSON.stringify(TrinityFocusEnergy())
+        DOM_VERSIONS.CURRENT_DOM = CURRENT_DOM
+        DOM_VERSIONS.CHANGED_DOM = CHANGED_DOM
+        DOMUpdater(DOM_VERSIONS)
+        // console.log(DOM_VERSIONS.CHANGED_DOM)
         body.innerHTML = TrinityFocusEnergy()
     }
     registeredFunctions = { ...registeredFunctions, retriggerRender: retriggerRender }
     body.innerHTML = TrinityFocusEnergy()
-    console.log(TrinityFocusEnergy())
+    // DOMUpdater()
+    const currentDOM = JSON.stringify(TrinityFocusEnergy())
+    DOM_VERSIONS = { ...DOM_VERSIONS, CURRENT_DOM: currentDOM }
 </script>
 
 </html>
