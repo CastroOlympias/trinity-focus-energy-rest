@@ -44,36 +44,6 @@ if (argumentToFunction === undefined) {
   argumentToFunction = "hey"
 }
 
-
-const testIng = () => {
-
-  return (`
-  <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
-    <h1 id='isTrue'>${isTrue}</h1>
-    <h1 id='isFalse'>${isFalse}</h1>
-    <h1 id='mayBe'>${registeredFunctions.stuff?._id}</h1>
-    <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
-
-      ${isTrue === true ? (
-      `<h1>Yes!!!!</h1>
-      <h1 id='mayBe'>${argumentToFunction}</h1>`
-    ) : (
-      `<h1>No!!!!</h1>`
-    )}
-
-      ${isTrue === true ? (
-      `<h1>Hell Yeah!!!!</h1>`
-    ) : (
-      ``
-    )}
-     
-      ${Home()}
-    </section >
-    ${ActionBar()}
-  </section >
-`)
-}
-
 const getPizzaList = () => {
   fetch('/api/users', {
     method: 'POST',
@@ -96,12 +66,42 @@ const getPizzaList = () => {
 registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
 getPizzaList()
 
+
+  return (`
+  <section id='trinigy-focus-energy-body-section' class='body-section BackDrop-mediumGrey-theme'>
+    <h1 id='isTrue'>${isTrue}</h1>
+    <h1 id='isFalse'>${isFalse}</h1>
+    <h1>${registeredFunctions.stuff?._id}</h1>
+    <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
+
+      ${isTrue === true ? (
+      `<h1>Yes!!!!</h1>
+      <h1 id='mayBe'>${argumentToFunction}</h1>`
+    ) : (
+      `<h1 id="can you see me">No!!!!</h1>`
+    )}
+
+      ${isTrue === true ? (
+      `<h1>Hell Yeah!!!!</h1>`
+    ) : (
+      ``
+    )}
+     
+      ${Home()}
+    </section >
+    ${ActionBar()}
+  </section >
+`)
+
+
+
+
 // setTimeout(() => {
 //   return testIng()
 
 // }, 2000);
 
-return testIng()
+
 
 
 
