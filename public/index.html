@@ -28,17 +28,12 @@
     import DOMUpdater from './DOMUpdater.mjs'
     const body = document.getElementById('body')
     const retriggerRender = () => {
-        const CURRENT_DOM = JSON.stringify(document.getElementById('body').innerHTML)
-        const CHANGED_DOM = JSON.stringify(TrinityFocusEnergy())
-        DOM_VERSIONS.CURRENT_DOM = CURRENT_DOM
-        DOM_VERSIONS.CHANGED_DOM = CHANGED_DOM
+        DOM_VERSIONS.CURRENT_DOM = JSON.stringify(document.getElementById('body').innerHTML)
+        DOM_VERSIONS.CHANGED_DOM = JSON.stringify(TrinityFocusEnergy())
         DOMUpdater(DOM_VERSIONS)
-        // console.log(DOM_VERSIONS.CHANGED_DOM)
-        body.innerHTML = TrinityFocusEnergy()
     }
-    registeredFunctions = { ...registeredFunctions, retriggerRender: retriggerRender }
+    registeredFunctions = { ...registeredFunctions, retriggerRender: retriggerRender, TrinityFocusEnergy: TrinityFocusEnergy }
     body.innerHTML = TrinityFocusEnergy()
-    // DOMUpdater()
     const currentDOM = JSON.stringify(TrinityFocusEnergy())
     DOM_VERSIONS = { ...DOM_VERSIONS, CURRENT_DOM: currentDOM }
 </script>

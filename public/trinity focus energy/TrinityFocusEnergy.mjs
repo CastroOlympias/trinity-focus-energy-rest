@@ -55,7 +55,7 @@ const getPizzaList = () => {
   })
     .then(response => response.json(skip, limit))
     .then(pizzaListArr => {
-      pizzaListArr; registeredFunctions = {...registeredFunctions, stuff: pizzaListArr[0]}; console.log(pizzaListArr[0])
+      pizzaListArr; registeredFunctions = {...registeredFunctions, stuff: pizzaListArr[0]}
     })
     .catch(err => {
       console.log(err);
@@ -75,14 +75,14 @@ getPizzaList()
     <section id='trinity-focus-energy-section' class='trinity-focus-energy-section'>
 
       ${isTrue === true ? (
-      `<h1>Yes!!!!</h1>
+      `<h1 id="I_am_Conditional_render_Yes">Yes!!!!</h1>
       <h1 id='mayBe'>${argumentToFunction}</h1>`
     ) : (
       `<h1 id="can you see me">No!!!!</h1>`
     )}
 
       ${isTrue === true ? (
-      `<h1>Hell Yeah!!!!</h1>`
+      `<h1 id="I'm_I_Here">Hell Yeah!!!!</h1>`
     ) : (
       ``
     )}
