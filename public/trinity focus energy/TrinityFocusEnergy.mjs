@@ -40,31 +40,34 @@ export default function TrinityFocusEnergy(hello_world) {
 
 
 
-if (argumentToFunction === undefined) {
-  argumentToFunction = "hey"
-}
+  if (argumentToFunction === undefined) {
+    argumentToFunction = "hey"
+  }
 
-const getPizzaList = () => {
-  fetch('/api/users', {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-    .then(response => response.json(skip, limit))
-    .then(pizzaListArr => {
-      pizzaListArr; registeredFunctions = {...registeredFunctions, stuff: pizzaListArr[0]}
+  const getPizzaList = () => {
+    fetch('/api/users', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
     })
-    .catch(err => {
-      console.log(err);
-    });
-};
+      .then(response => response.json(skip, limit))
+      .then(pizzaListArr => {
+        pizzaListArr; 
+        registeredFunctions = { ...registeredFunctions, stuff: pizzaListArr[0] }; 
+        API_DATA = { ...API_DATA, this_data: pizzaListArr }; 
+        console.log(pizzaListArr)
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
 
 
-registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
-getPizzaList()
+  registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
+  getPizzaList()
 
 
   return (`
@@ -96,10 +99,10 @@ getPizzaList()
 
 
 
-// setTimeout(() => {
-//   return testIng()
+  // setTimeout(() => {
+  //   return testIng()
 
-// }, 2000);
+  // }, 2000);
 
 
 
@@ -142,17 +145,17 @@ getPizzaList()
   //     ) : (
   //       ``
   //     )}
-       
+
   //       ${Home()}
   //     </section >
   //     ${ActionBar()}
   //   </section >
   // `)
-  
 
 
 
 
 
-  
+
+
 }

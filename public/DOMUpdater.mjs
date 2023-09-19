@@ -41,7 +41,7 @@ export default function DOMUpdater(DOM_VERSIONS) {
         // console.log(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
         NEW_VITUAL_DOM.push(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
     }
-
+    console.log(API_DATA)
     console.log('Previous DOM', PREVIOUS_VIRTUAL_DOM)
     console.log('New DOM', NEW_VITUAL_DOM)
 
