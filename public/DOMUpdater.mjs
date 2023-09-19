@@ -41,9 +41,9 @@ export default function DOMUpdater(DOM_VERSIONS) {
         // console.log(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
         NEW_VITUAL_DOM.push(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
     }
-    console.log(API_DATA)
-    console.log('Previous DOM', PREVIOUS_VIRTUAL_DOM)
-    console.log('New DOM', NEW_VITUAL_DOM)
+    console.log(API_DATA?.this_data)
+    // console.log('Previous DOM', PREVIOUS_VIRTUAL_DOM)
+    // console.log('New DOM', NEW_VITUAL_DOM)
 
 
 
@@ -56,16 +56,16 @@ export default function DOMUpdater(DOM_VERSIONS) {
 
 
     // console.log(otherTesting)
-    for (let i = 0; i < JSON.stringify(DOM_VERSIONS?.CURRENT_DOM).length; i++) {
-        if (JSON.stringify(DOM_VERSIONS?.CURRENT_DOM)[i] === '<') {
-            START_ELEMENT_MAP_OF_CURRENT_DOM.push(i)
-            END_OF_ELEMENT_TEXT_OF_CURRENT_DOM.push(i)
-        }
-        if (JSON.stringify(DOM_VERSIONS?.CURRENT_DOM)[i] === '>') {
-            END_ELEMENT_MAP_OF_CURRENT_DOM.push(i)
-            BEGINNING_OF_ELEMENT_TEXT_OF_CURRENT_DOM.push(i)
-        }
-    }
+    // for (let i = 0; i < JSON.stringify(DOM_VERSIONS?.CURRENT_DOM).length; i++) {
+    //     if (JSON.stringify(DOM_VERSIONS?.CURRENT_DOM)[i] === '<') {
+    //         START_ELEMENT_MAP_OF_CURRENT_DOM.push(i)
+    //         END_OF_ELEMENT_TEXT_OF_CURRENT_DOM.push(i)
+    //     }
+    //     if (JSON.stringify(DOM_VERSIONS?.CURRENT_DOM)[i] === '>') {
+    //         END_ELEMENT_MAP_OF_CURRENT_DOM.push(i)
+    //         BEGINNING_OF_ELEMENT_TEXT_OF_CURRENT_DOM.push(i)
+    //     }
+    // }
 
     // END_OF_ELEMENT_TEXT_OF_CURRENT_DOM = END_OF_ELEMENT_TEXT_OF_CURRENT_DOM.splice(1)
 
@@ -107,6 +107,6 @@ export default function DOMUpdater(DOM_VERSIONS) {
     // console.log("New DOM")
     // console.log(CHANGED_DOM_AS_OBJECTS)
 
-    body.innerHTML = registeredFunctions.TrinityFocusEnergy()
+    // body.innerHTML = registeredFunctions.TrinityFocusEnergy()
 
 }

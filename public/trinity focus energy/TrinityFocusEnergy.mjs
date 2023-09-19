@@ -55,17 +55,21 @@ export default function TrinityFocusEnergy(hello_world) {
     })
       .then(response => response.json(skip, limit))
       .then(pizzaListArr => {
-        pizzaListArr; 
-        registeredFunctions = { ...registeredFunctions, stuff: pizzaListArr[0] }; 
-        API_DATA = { ...API_DATA, this_data: pizzaListArr }; 
+        pizzaListArr;
+        registeredFunctions = { ...registeredFunctions, stuff: pizzaListArr[0] };
+        API_DATA = { ...API_DATA, this_data: pizzaListArr };
         console.log(pizzaListArr)
+
+        registeredFunctions.DOMUpdater(DOM_VERSIONS)
+
+
       })
       .catch(err => {
         console.log(err);
       });
   };
 
-
+  // console.log(registeredFunctions.DOMUpdater)
   registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
   getPizzaList()
 

@@ -33,8 +33,10 @@
     }
     registeredFunctions = { ...registeredFunctions, retriggerRender: retriggerRender, TrinityFocusEnergy: TrinityFocusEnergy }
     body.innerHTML = TrinityFocusEnergy()
-    DOMUpdater(DOM_VERSIONS = { ...DOM_VERSIONS, CURRENT_DOM: JSON.stringify(TrinityFocusEnergy()), CHANGED_DOM: JSON.stringify(TrinityFocusEnergy()) })
-
+    DOM_VERSIONS = { ...DOM_VERSIONS, CURRENT_DOM: JSON.stringify(TrinityFocusEnergy()), CHANGED_DOM: JSON.stringify(TrinityFocusEnergy()) }
+   
+    registeredFunctions = { ...registeredFunctions, DOMUpdater: DOMUpdater }
+    // DOMUpdater(DOM_VERSIONS)
 </script>
 
 </html>
