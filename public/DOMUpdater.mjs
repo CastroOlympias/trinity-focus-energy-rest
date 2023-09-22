@@ -1,6 +1,54 @@
 let testText = 'test';
 
 export default function DOMUpdater(DOM_VERSIONS) {
+
+    const secondBody = document.getElementById('body')
+
+    const plants = [{ broccoli: 'broccoli', cauliflower: 'cauliflower', cabbage: 'cabbage', kale: 'kale' }, [{ tomato: 'tomato', beans: 'beans', carots: 'carots' }]]
+
+    // console.log(plants);
+    // console.log(plants.pop());
+
+    console.log(secondBody);
+
+
+    // let otherTesting = secondBody.split('\\n')
+    // console.log({secondBody})
+    let htmlBodyObjectified = { secondBody }
+
+
+    const array1 = [1, 2, 3, 4];
+
+    // 0 + 1 + 2 + 3 + 4
+    // const initialValue = 0;
+    const sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+    // console.log(sumWithInitial);
+    // Expected output: 10
+
+    // const arrayTwo = htmlBodyObjectified.htmlBody.children[0].children
+
+
+
+
+
+
+
+
+
+
+    console.log(htmlBodyObjectified.secondBody.children[0].children[0].innerText)
+
+
+
+
+    setTimeout(() => {
+        htmlBodyObjectified.secondBody.children[0].children[0].innerText = 'Yippy'
+    }, 2000)
+
+
+
+    console.log(htmlBodyObjectified.secondBody.children[0].children)
     let START_ELEMENT_MAP_OF_CURRENT_DOM = []
     let END_ELEMENT_MAP_OF_CURRENT_DOM = []
     let BEGINNING_OF_ELEMENT_TEXT_OF_CURRENT_DOM = []
@@ -41,7 +89,7 @@ export default function DOMUpdater(DOM_VERSIONS) {
         // console.log(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
         NEW_VITUAL_DOM.push(JSON.stringify(DOM_VERSIONS?.CHANGED_DOM.split('\\n')[indexOfDOMObjects]).replace(/\\\\\\"/g, ""))
     }
-    console.log(API_DATA?.this_data)
+    // console.log(API_DATA?.this_data)
     // console.log('Previous DOM', PREVIOUS_VIRTUAL_DOM)
     // console.log('New DOM', NEW_VITUAL_DOM)
 
@@ -107,6 +155,6 @@ export default function DOMUpdater(DOM_VERSIONS) {
     // console.log("New DOM")
     // console.log(CHANGED_DOM_AS_OBJECTS)
 
-    // body.innerHTML = registeredFunctions.TrinityFocusEnergy()
+    body.innerHTML = registeredFunctions.TrinityFocusEnergy()
 
 }

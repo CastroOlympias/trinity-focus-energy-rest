@@ -1,5 +1,5 @@
-const { Schema, model } = require('mongoose');
-const UTCDateFormatter = require('../configuration/UTCDateFormatter.js');
+import { Schema, model } from 'mongoose';
+import UTCDateFormatter from '../configuration/UTCDateFormatter.js'
 
 const pantryItemsSchema = new Schema(
     {
@@ -12,31 +12,31 @@ const pantryItemsSchema = new Schema(
             type: String
         },
         // Document Pantry Item Data
-        UTCCreatedAtFullDateAndTime: {
-            type: Date,
-            default: Date.now,
-            get: UTCFullDateAndTIme => UTCDateFormatter(UTCFullDateAndTIme)[0]
-        },
-        UTCCreatedAtTime: {
-            type: Date,
-            default: Date.now,
-            get: time => UTCDateFormatter(time)[1]
-        },
-        UTCCreatedAtDate: {
-            type: Date,
-            default: Date.now,
-            get: date => UTCDateFormatter(date)[2]
-        },
-        UTCCreatedAtMonth: {
-            type: Date,
-            default: Date.now,
-            get: UTCMonth => UTCDateFormatter(UTCMonth)[3]
-        },
-        UTCCreatedAtYear: {
-            type: Date,
-            default: Date.now,
-            get: UTCYear => UTCDateFormatter(UTCYear)[4]
-        },
+        // UTCCreatedAtFullDateAndTime: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: UTCFullDateAndTIme => UTCDateFormatter(UTCFullDateAndTIme)[0]
+        // },
+        // UTCCreatedAtTime: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: time => UTCDateFormatter(time)[1]
+        // },
+        // UTCCreatedAtDate: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: date => UTCDateFormatter(date)[2]
+        // },
+        // UTCCreatedAtMonth: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: UTCMonth => UTCDateFormatter(UTCMonth)[3]
+        // },
+        // UTCCreatedAtYear: {
+        //     type: Date,
+        //     default: Date.now,
+        //     get: UTCYear => UTCDateFormatter(UTCYear)[4]
+        // },
         pantryItemStore: {
             type: String
         },
@@ -106,4 +106,4 @@ const pantryItemsSchema = new Schema(
 )
 
 const PantryItemsModel = model('PantryItemsModel', pantryItemsSchema)
-module.exports = PantryItemsModel;
+export default PantryItemsModel;

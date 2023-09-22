@@ -10,6 +10,10 @@ router
     .post(userController.createUser)
 
 router
+    .route('/test')
+    .post(userController.veiwAllPantryItemsFromPantryId)
+
+router
     .route('/login')
     .get(userController.loginToUser);
 

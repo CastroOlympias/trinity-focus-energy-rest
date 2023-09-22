@@ -1,13 +1,14 @@
 import UserModel from '../../data_models/UserModel.js'
+import PantryItemsModel from '../../data_models/PantryItemsModel.js'
 import signToken from '../../utils/Authentication.js'
 import bcrypt from 'bcrypt'
 
 const userController = {
   getAllUsers: async ({ body }, res) => {
-    console.log(body)
+    // console.log(body)
     UserModel.find({})
-      // .limit(1)
-      // .skip(0)
+      .skip(body.skip)
+      .limit(body.limit)
       .select('-__v')
       .select('-password')
       .sort({ _id: -1 })
@@ -84,6 +85,20 @@ const userController = {
         console.log(err);
         res.sendStatus(400);
       });
+  },
+
+  veiwAllPantryItemsFromPantryId: async ({ body }, res) => {
+    console.log('jsdjsdjsdasdfasdfasdfasdfasdasdfasdfasdfasdfasdfasdfjsd', body)
+    PantryItemsModel.find({ pantryId: '64fa6be9f326444cf188715a' }).sort({ pantryItemName: 'asc', UTCCreatedAtFullDateAndTime: 'asc' })
+      // .populate('pantryItemsImages')
+      // .skip(body.skip)
+      // .limit(body.limit)
+      .then(pantryItemData => res.json(pantryItemData))
+      .catch(err => {
+        console.log(err);
+        res.sendStatus(400);
+      });
+
   },
 };
 

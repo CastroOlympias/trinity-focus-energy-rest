@@ -28,14 +28,21 @@ export default function TrinityFocusEnergy(hello_world) {
   }
 
   let skip = 0
-  let limit = 1
+  let limit = 2
 
   let formData = {
     "eMail": "a@msn.com",
     "userName": "BBB",
     "password": "123456789",
     "newPassword": "987654321",
-    "birthDate": "07/04/1776"
+    "birthDate": "07/04/1776",
+    skip,
+    limit
+  }
+
+
+  let pantryIdItems = {
+    patnryId: '64fa6be9f326444cf188715a'
   }
 
 
@@ -44,14 +51,38 @@ export default function TrinityFocusEnergy(hello_world) {
     argumentToFunction = "hey"
   }
 
-  const getPizzaList = () => {
-    fetch('/api/users', {
+  // const getPizzaList = () => {
+  //   fetch('/api/users', {
+  //     method: 'POST',
+  //     headers: {
+  //       Accept: 'application/json',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(formData)
+  //   })
+  //     .then(response => response.json(skip, limit))
+  //     .then(pizzaListArr => {
+  //       pizzaListArr;
+  //       registeredFunctions = { ...registeredFunctions, stuff: pizzaListArr[0] };
+  //       API_DATA = { ...API_DATA, this_data: pizzaListArr };
+  //       console.log(pizzaListArr)
+  //       // registeredFunctions.DOMUpdater(DOM_VERSIONS)
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // };
+  // getPizzaList()
+
+
+  const getPizzaListTwo = () => {
+    fetch('/api/users/test', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(pantryIdItems)
     })
       .then(response => response.json(skip, limit))
       .then(pizzaListArr => {
@@ -59,19 +90,16 @@ export default function TrinityFocusEnergy(hello_world) {
         registeredFunctions = { ...registeredFunctions, stuff: pizzaListArr[0] };
         API_DATA = { ...API_DATA, this_data: pizzaListArr };
         console.log(pizzaListArr)
-
-        registeredFunctions.DOMUpdater(DOM_VERSIONS)
-
-
+        // registeredFunctions.DOMUpdater(DOM_VERSIONS)
       })
       .catch(err => {
         console.log(err);
       });
   };
-
+  getPizzaListTwo()
   // console.log(registeredFunctions.DOMUpdater)
   registeredFunctions = { ...registeredFunctions, testFunction: testFunction, Home: Home }
-  getPizzaList()
+
 
 
   return (`
@@ -89,7 +117,8 @@ export default function TrinityFocusEnergy(hello_world) {
     )}
 
       ${isTrue === true ? (
-      `<h1 id="I'm_I_Here">Hell Yeah!!!!</h1>`
+      `<h1 id="I'm_I_Here">
+      Hell Yeah!!!!</h1>`
     ) : (
       ``
     )}
